@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>IT 354</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<div id="wrapper">
+<h1>IT 354 Spring 2020</h1>
+<h2>Anthony Belsan</h2>
+<nav>
+<a href="index.html">Home</a> &#xA0; <a href="video.html">Video</a> &#xA0; <a href="#">Link 3</a> &#xA0; <a href="#">Link 4</a>
+</nav>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wbGT7ajhatM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Values and Data Types</h2>
+<h3>Values</h3>
+<p>A typical modern computer has more than 30 billion bits in its volatile data storage (working memory). Nonvolatile storage (the hard disk or equivalent) tends to have yet a few orders of magnitude more. To be able to work with such quantities of bits without getting lost, we must separate them into chunks that represent pieces of information. In a JavaScript environment, those chunks are called values. Though all values are made of bits, they play different roles. Every value has a type that determines its role. Some values are numbers, some values are pieces of text, some values are functions, and so on. To create a value, you must merely invoke its name. This is convenient. You don’t have to gather building material for your values or pay for them. You just call for one, and whoosh, you have it. They are not really created from thin air, of course. Every value has to be stored somewhere, and if you want to use a gigantic amount of them at the same time, you might run out of memory. Fortunately, this is a problem only if you need them all simultaneously. As soon as you no longer use a value, it will dissipate, leaving behind its bits to be recycled as building material for the next generation of values.</p>
+<h3>Data Types</h3>
+<h4>Numbers</h4>
+<p>The number type represents both integer and floating point numbers. There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on. Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: Infinity, -Infinity and NaN. Special numeric values formally belong to the “number” type. Of course they are not numbers in the common sense of this word.</p>
+<h4>Strings</h4>
+<p>A string in JavaScript must be surrounded by quotes. In JavaScript, there are 3 types of quotes.</p>
+<ol>
+	<li>Double quotes: "Hello"</li>
+	<li>Single quotes: 'Hello'</li>
+	<li>Backticks: `Hello`</li>
+</ol>
+<p>Double and single quotes are “simple” quotes. There’s practically no difference between them in JavaScript. Backticks are “extended functionality” quotes for things like embed variables and expressions.</p>
+<h4>Boolean</h4>
+<p>The boolean type has only two values: true and false. This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”. Boolean values also come as a result of comparisons.</p>
+<h2>Unary Operators</h2>
+<p>Not all operators are symbols. Some are written as words. A unary operation is an operation with only one operand. This operand comes either before or after the operator. Unary operators are more efficient than standard JavaScript function calls. Additionally, unary operators can not be overridden, therefore their functionality is guaranteed.</p>
+<h2>Hoisting</h2>
+<p>In JavaScript, a variable can be declared after it has been used. Put simply; a variable can be used before it has been declared. An example would be:<br/><br/>
+x = 5;<br/><br/>
+elem = document.getElementById("demo");<br/>
+elem.innerHTML = x;<br/><br/>
+var x;</p>
+</div>
+</body>
+</html>
