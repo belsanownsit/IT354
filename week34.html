@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>IT 354</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<div id="wrapper">
+<h1>IT 354 Spring 2020</h1>
+<h2>Week 3 and 4</h2>
+<nav>
+<a href="index.html">Home</a> &#xA0; <a href="video.html">Video 1</a> &#xA0; <a href="week34.html">Week 3-4</a> &#xA0; <a href="article2.html">Article 2</a>
+<br/><br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L-quw6u1uog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</nav>
+<h2>Functions</h2>
+<h3>Named Functions</h3>
+<p>A named function is a function declaration. A function declaration occurs when the function keyword is the first word of the statement. Functions assigned to a variable become function expressions.</p>
+<h3>Function Expression</h3>
+<p>A JavaScript function can also be defined using an expression. The function keyword can be used to define a function inside an expression. A function expression can be stored in a variable: var x = function (a, b) {return a * b}; After a function expression has been stored in a variable, the variable can be used as a function</p>
+<h3>Arrow Functions</h3>
+<p>An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords. Arrow function expressions are ill suited as methods, and they cannot be used as constructors.</p>
+<h2>Other Topics</h2>
+<h3>Optional Arguments</h3>
+<p>Many programming languages support optional function arguments - ie. functions in which certain arguments are optional. You can set a default value for any argument - so if the argument is not present, the default value will be used. Unfortunately, JavaScript is not one of these languages - so we will have to use a bit of trickery to get this effect in JavaScript. The simplest method of doing this is to check for the argument and create a new variable with the name of the argument if said argument is not present. For unlimited arguments, we provide an argument list when declaring a function. But we can avoid that and create a function that will take unlimited number of arguments. These arguments can be accessed using the 'arguments' variable.</p>
+<h3>Rest Parameters</h3>
+<p>The rest parameter has a prefix of three dots (...). A rest parameter allows us to represent an indefinite number of arguments as an array. The rest parameter can only be the last one. That’s the rule. It’s meant to capture the rest values.</p>
+<h3>Scope</h3>
+<p>In JavaScript there are two types of scope: Local and Global. Each function creates a new scope. Scope determines the accessibility (visibility) of these variables. Variables defined inside a function are not accessible (visible) from outside the function.<br/>Local - variables declared within a JavaScript function<br/>Global - variable declared outside a function</p>
+<h3>Nested Functions</h3>
+<p>Since all JavaScript functions are objects and they have a scope chain associated with them, they are, in fact, closures. Most commonly however, a closure is created when a nested function object is returned from the function within which it was defined. The nested function closures are a powerful feature of JavaScript and they are commonly used in advanced applications. For instance, it is commonly used when declaring event callbacks. Many JavaScript libraries make use of closures.</p>
+</div>
+</body>
+</html>
