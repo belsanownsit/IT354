@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>IT 354</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<div id="wrapper">
+<h1>IT 354 Spring 2020</h1>
+<h2>Week 11 - Modules + High Order Functions + Advanced Array Methods</h2>
+<nav>
+<a href="index.html">Home</a> &#xA0; <a href="video.html">Values and Data Types</a> &#xA0; <a href="week34.html">Functions</a> &#xA0; <a href="article2.html">ECMAscript</a> &#xA0; <a href="video3.html">Objects</a> &#xA0; <a href="assign3.html">Usability</a>  &#xA0; <a href="week7.html">Objects Part 2</a>  &#xA0; <a href="video4.html">Microservice vs Monolith  &#xA0; <a class="current">Modules</a>  &#xA0; <a href="foit.html">FOIT</a>
+<h3>Week 11 Video Examples</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nulpBznZAss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</nav>
+<h3>Modules</h3>
+<img src="modules.png" alt="Modules Example" height="500px"/>
+<br/><br/>
+<p>Modules are actually very simple once you understand them. All it essentially is, is using javascript functions in other files by import/exporting them. This is useful because that way you don't have to retype out all the properties of a function. These modules are very flexible because you can rename them as well as choose which functions transfer and which ones don't.</p>
+<h3>Higher Order Functions</h3>
+<img src="hof1.png" alt="HOF Example 1" height="400px">
+<img src="hof2.png" alt="HOF Example 2" height="400px">
+<br/><br/>
+<p>Much like modules this is a very straight forward concept. As you can see in the two example picture above: both involve calling a function that has multiple uses so that you don't have to rewrite the same function over and over again with small differences. This is important because using it is going to save you a lot of time and headache. With higher order functions you will be able to finish tedious, redundant task a lot easier.</p>
+<h3>Advanced Array Methods</h3>
+<p>Advanced Array Methods allow arrow functions to be used with arrays.</p>
+<ul>
+    <li>find - returns whatever value in the array that satisfies the function requirements first</li>
+    <p>const array = [2, 4, 6, 8, 10];<br>
+        const num = array.find(element => element > 7);<br>
+        console.log(num);<br><br>
+        Output: 8
+    </p>
+    <li>findIndex - much like 'find' this returns the index of the number in an array that meets the requirements</li>
+    <p>const array = [5, 12, 9, 130, 44];<br>
+        const isLargeNumber = (element) => element > 13;<br>        
+        console.log(array.findIndex(isLargeNumber));<br><br>
+        Output: 3
+    </p>
+    <li>flat - creates a new array that concatenates the sub-array elements</li>
+    <p>const array = [1, 2, [3, 4]];<br>
+    array.flat();<br><br>
+    Output: [1, 2, 3, 4]</p>
+    <li>map and flatMap - maps all elements then flattens the results into an array</li>
+    <p>let array = [1, 2, 3, 4];<br>
+        array.map(x => [x * 2]);<br><br>
+        Output: [[2], [4], [6], [8]] <br><br>
+        array.flatMap(x => [[x * 2]]);<br><br>
+        Output: [[2], [4], [6], [8]]</p>
+    <li>filter - creats a new array with only the elements that meet the requirements</li>
+    <p>const words = ['ball', 'hit', 'run', 'base', 'pitch', 'strike'];<br>
+    const result = words.filter(word => word.length > 4); <br>
+    console.log(result);<br><br>
+    Output: ['pitch', 'strike']</p>
+    <li>push - adds elements to an array then returns the length</li>
+    <p>const sports = ['baseball', 'hockey', 'soccer'];<br>
+    const count = sports.push('basketball');<br>
+    console.log(count , sports);<br><br>
+    Output: 4 ['baseball', 'hockey', 'soccer', 'basketball']</p>
+    <li>sort - sorts the elements inside an array in ascending order whether its numerical or alphabetical</li>
+    <p>const fruit = ['grape', 'apple', 'orange'];<br>
+    fruit.sort();<br>
+    console.log(fruit);<br><br>
+    Output: ['apple', 'grape', 'orange'] <br><br>
+    const array = [ 5, 49 , 29 , 10];<br>
+    array.sort();<br>
+    console.log(array);<br><br>
+    Output: [ 5, 10, 29, 49]</p>
+</ul>
+<br/><br/><br/><br/><br/>
+</div>
+</body>
+</html>
