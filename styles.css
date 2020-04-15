@@ -58,4 +58,7 @@ nav a{
 	.space h3{
 		padding-top: 500px;
 	}
+	#wrapper a {
+		padding: 90px;
+	}
 }
